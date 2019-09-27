@@ -1,0 +1,50 @@
+//ALan 05/01/2019
+// Tasked with creating a program that output all the odd numbers between 2 values.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+using System.Windows.Forms;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {/////
+                int Total = 0;
+                int counter = 0;
+                MessageBox.Show("1-10000 odd numbers");
+                for (int nvalue = 0; nvalue <= 10000; nvalue++)
+
+                {  ////
+
+
+                    if (nvalue % 2 == 0)
+                    { ///
+                        counter++;
+                          if (counter == 1001)
+                               { 
+                              break;
+                               }
+                        continue;
+                     } ///
+
+                   
+                   Total += nvalue;
+                    WriteLine(nvalue);
+
+
+                }  ////
+                MessageBox.Show("Thats all I got folks, your highest value was 1999, your lowest was 1. Thanks for playing ");
+                // ReadKey();
+
+            }/////
+        }
+    }
+}
+//ALan 05/01/2019
