@@ -1,0 +1,83 @@
+// Alan 4/8/2019
+// Tasked with creating a program that used Nested If statements to return roman numeral value.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace decimals
+{
+    class Program
+    {
+        public static void Main()
+        {
+            int value;
+            string answer;
+            // int value1;
+
+            //explain to user
+            WriteLine("This application allows a whole number between 1 and 10");
+            WriteLine("to be entered. It displays the equivalent roman numeral value.");
+            WriteLine("enter number");
+            value = Convert.ToInt16(ReadLine());
+            answer = CalculateRoman(value);
+
+            WriteLine("Roman value: {0} or {1}", answer, value);
+            ReadKey();
+        }
+
+
+
+        public static string CalculateRoman(int value)
+        {
+            //check conditions and save result
+            string answer;
+
+
+
+            if (value < 0 || value > 10)
+                answer = "Invalid input";
+            else
+                if (value == 1)
+                answer = "I";
+            else
+                if (value == 2)
+                answer = "II";
+            else
+                if (value == 3)
+                answer = "III";
+            else
+                if (value == 4)
+                answer = "IV";
+            else
+                if (value == 5)
+                answer = "V";
+            else
+                if (value == 6)
+                answer = "VI";
+            else
+                if (value == 7)
+                answer = "VII";
+            else
+                if (value == 8)
+                answer = "VIII";
+            else
+                if (value == 9)
+                answer = "IX";
+            else
+                answer = "X";
+
+            return answer;
+
+        }
+
+    }
+}
+
+
+
+
+// Alan  4/8/2019
