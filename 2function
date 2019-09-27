@@ -1,0 +1,46 @@
+// Alan 3/01/19
+// Tasked with creating a two function program that retured area and perimeter
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace PerimiterOfRectangle
+{
+    public class Program
+    {
+
+
+        public static void Main(string[] args)
+		{
+        double length;
+        double width;
+        double area;
+        double perimeter;
+
+        WriteLine("Enter length of rectangle: ");
+        length = Convert.ToDouble(ReadLine());
+        WriteLine("Enter width of rectangle: ");
+        width = Convert.ToDouble(ReadLine());
+        perimeter = Program.perimeter(length, width);
+        area = Program.areacalc(length, width);
+        WriteLine("\nPerimeter of rectangle: = {0} and Area = {1}", + perimeter, area);
+		}
+		
+        public static double areacalc(double length, double width)
+        {
+            return length * width;
+
+        }
+        public static double perimeter(double length, double width)
+        {
+            return (2 * length) + (2 * width);
+
+        }
+    }
+}
+
+// Alan 3/01/19
